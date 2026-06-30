@@ -1,7 +1,7 @@
 import { API_URL } from "../config/api";
-import type { WeaponsTypes } from "../types/WeaponsTypes";
+import type { WeaponType } from "../types/WeaponType";
 
-export async function itemPriceCheck(itemId: string): Promise<WeaponsTypes[]> {
+export async function itemPriceCheck(itemId: string): Promise<WeaponType[]> {
   try {
     const response = await fetch(`${API_URL}/stats/prices/${itemId}`);
 

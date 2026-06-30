@@ -1,4 +1,4 @@
-export interface WeaponsTypes {
+export interface WeaponType {
   item_id: string;
   city: string;
   quality: number;
